@@ -3,9 +3,11 @@ package lab1.product;
 import lab1.provider.Provider;
 
 public class Product {
-    private String name;
+     private String name;
     private short price;
     private Provider provider;
+    private int quantity;
+    private int data;
 
     public Product(String name,short price, Provider provider) {
     this.name=name;
@@ -36,5 +38,21 @@ public class Product {
 
     public void setProvider(Provider provider) {
         this.provider = provider;
+    }
+
+    public int getQuantity() {
+        return quantity;
+    }
+
+    public void setQuantity(int quantity) {
+        this.quantity = quantity;
+    }
+
+    public int getData() {
+        return data;
+    }
+
+    public void setData(int data) {
+        this.data = data;
     }
 }
